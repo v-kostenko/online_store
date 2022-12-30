@@ -1,0 +1,21 @@
+Java is a programming language originally developed by Sun Microsystems and released in 1995 as a core component of Sun's Java platform.
+The language derives much of its Syntax from C and C++ but has a simpler object model and fewer low-level facilities.
+Java applications are typically compiled to bytecode which can run on any Java virtual machine (JVM) regardless of computer architecture.
+
+The original and reference implementation Java compilers, virtual machines, and class libraries were developed by Sun from 1995.
+As of May 2007, in compliance with the specifications of the Java Community Process, Sun made available most of their
+Java technologies as Virtual Machine under the GNU General Public License.
+Others have also developed alternative implementations of these Sun technologies,
+such as the GNU Compiler for Java and GNU Classpath.
+
+The Java language was created by James Gosling in June 1991 for use in a set top box project.[3]
+The language was initially called Oak, after an oak tree that stood outside Gosling's office -
+and also went by the name Green - and ended up later being renamed to Java, from a list of random words.[4]
+Gosling's goals were to implement a virtual machine and a language that had a familiar C/C++ style of notation.[5]
+The first public implementation was Java 1.0 in 1995. It promised "Write Once, Run Anywhere" (WORA), providing no-cost runtimes on popular platforms.
+It was fairly secure and its security was configurable, allowing network and file access to be restricted.
+Major web browsers soon incorporated the ability to run secure Java applets within web pages. Java became popular quickly.
+With the advent of Java 2, new versions had multiple configurations built for different types of platforms.
+For example, J2EE was for enterprise applications and the greatly stripped down version J2ME was for mobile applications.
+J2SE was the designation for the Standard Edition. In 2006, for marketing purposes, new J2 versions were renamed Java EE,
+Java ME, and Java SE, respectively.
