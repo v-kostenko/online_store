@@ -174,4 +174,7 @@ public class ShopService {
         return new LoginService();
     }
 
+    public Order getOrder(int orderNumber) {
+       return orderList.get(orderNumber);
+    }
 }

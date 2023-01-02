@@ -152,11 +152,11 @@ public class ClientProgram {
         }
 
         long number = OrderService.createOrder(cart.getOrderItemList(), client);
-        if (number == -1) {
-            logger.warn("Something went wrong");
-        } else {
-            logger.info("Order was created successful. Order`s number is " + number);
-        }
+//        if (number == -1) {
+//            logger.warn("Something went wrong");
+//        } else {
+//           // logger.info("Order was created successful. Order`s number is " + number + " Client program");
+//        }
     }
 
     private void findPresentProduct() {

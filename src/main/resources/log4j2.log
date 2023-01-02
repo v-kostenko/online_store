@@ -1,1 +1,1 @@
-19:12:23 [main] INFO  com.solvd.onlineStore.refactoring.ClientProgram - You are not logged in.
+16:15:26 [main] WARN  com.solvd.onlineStore.refactoring.ClientProgram - You are not authorized.

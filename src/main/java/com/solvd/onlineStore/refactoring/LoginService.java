@@ -25,7 +25,7 @@ public class LoginService {
             logger.info("Hello! Fill out the form to become a client our shop.");
             //Logic of checking e-mail first
             String email = InputService.inputText("Your email");
-            Validator.emailValidation(email);
+            //Validator.emailValidation(email);
             ShopService.getShopService().checkEmail(email);
 
             String name = InputService.inputText("What is your name?");
@@ -51,8 +51,6 @@ public class LoginService {
 
             ShopService.getShopService().addClient(email, registeredClient);
             return registeredClient;
-        } catch (ValidatorException validatorException) {
-            logger.error(validatorException.getMessage());
         } catch (ClientExistingException clientExistingException) {
 
         }

@@ -39,10 +39,12 @@ public class GenerateData {
         return productList;
     }
 
-    private static Manager getClient(int x){
-        List<Employee> managers = new ArrayList<>();
-        managers = generateEmployee();
-        return (Manager) managers.get(x);
+    public static Manager getManager(){
+        Manager manager1 = new Manager("Petro", "Larchenko", new Date(1991 - 1900, 10, 2), Gender.MALE,
+                "Ukrainian", "UA 223311", 123456, "+380999667711", "manager_petro_larchenko@ukr.net",
+                1500, new StaffId("Engineering", 1), null,
+                new Date(1980 - 1900, 3, 20), 75);
+        return manager1;
     }
 
     public static List<Order> generateOrders() {

@@ -5,6 +5,7 @@ import com.solvd.onlineStore.exceptions.OrderCreationException;
 import com.solvd.onlineStore.order.Order;
 import com.solvd.onlineStore.order.OrderItem;
 import com.solvd.onlineStore.order.PaymentType;
+import com.solvd.onlineStore.util.GenerateData;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -36,22 +37,26 @@ public class OrderService {
             // System.out.println(order); error manager is null
 
             long orderNumber = ShopService.getShopService().addOrder(order);
+            order.setManager(GenerateData.getManager());
             if (orderNumber == -1) {
                 logger.info("Something went wrong");
             } else {
-                logger.info("Order was created successful. Order`s number is " + orderNumber);
+                logger.info("Order was created successful. Order`s number is " + orderNumber + " OrderService");
+                System.out.println(order);
                 return orderNumber;
             }
-        } catch (OrderCreationException e){
+        } catch (OrderCreationException e) {
             e.getMessage();
         }
         //cart.clearCart();
         //
         return -1;
-
     }
 
-
+//    public static void showOrder() {
+//        int orderNumber = InputService.inputInt("Type order number you want to see.");
+//        Order order = ShopService.getShopService().getOrder(orderNumber);
+//    }
 
 
 }
